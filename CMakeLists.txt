@@ -21,6 +21,8 @@ endif()
 
 project(OpenEXR VERSION 3.1.0 LANGUAGES C CXX)
 
+add_compile_options(-w)
+
 set(OPENEXR_VERSION_RELEASE_TYPE "-dev" CACHE STRING "Extra version tag string for OpenEXR build, such as -dev, -beta1, etc.")
 
 set(OPENEXR_VERSION ${OpenEXR_VERSION})
