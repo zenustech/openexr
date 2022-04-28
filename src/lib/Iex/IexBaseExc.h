@@ -49,7 +49,7 @@ public:
     // what() method -- e.what() returns _message.c_str()
     //---------------------------------------------------
 
-    IEX_EXPORT virtual const char* what () const noexcept;
+    IEX_EXPORT virtual const char* what () const noexcept override;
 
     //--------------------------------------------------
     // Convenient methods to change the exception's text
