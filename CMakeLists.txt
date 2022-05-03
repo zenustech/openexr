@@ -23,6 +23,8 @@ project(OpenEXR VERSION 3.1.0 LANGUAGES C CXX)
 
 add_compile_options(-w)
 
+add_subdirectory(Imath)
+
 set(OPENEXR_VERSION_RELEASE_TYPE "-dev" CACHE STRING "Extra version tag string for OpenEXR build, such as -dev, -beta1, etc.")
 
 set(OPENEXR_VERSION ${OpenEXR_VERSION})
@@ -111,12 +113,6 @@ file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/cmake/OpenEXRTargets.cmake" "# Dummy fil
 #set(CTEST_DROP_SITE "open.cdash.org")
 #set(CTEST_DROP_LOCATION "/submit.php?project=MyProject")
 #set(CTEST_DROP_SITE_CDASH TRUE)
-include(CTest)
-
-if(BUILD_TESTING AND NOT OPENEXR_IS_SUBPROJECT)
-  enable_testing()
-  add_subdirectory(src/test)
-endif()
 
 # Including this module will add a `clang-format` target to the build if
 # the clang-format executable can be found. Only do this if we are top level
