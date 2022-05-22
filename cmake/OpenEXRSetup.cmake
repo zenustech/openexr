@@ -74,7 +74,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 if(NOT OPENEXR_IS_SUBPROJECT)
   # Usual cmake option to build shared libraries or not, only overriden if OpenEXR is a top level project,
   # in general this setting should be explicitly configured by the end user
-  option(BUILD_SHARED_LIBS "Build shared library" ON)
+  #option(BUILD_SHARED_LIBS "Build shared library" ON)
 endif()
 
 # Suffix to append to root name, this helps with version management

@@ -62,7 +62,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_DEBUG_POSTFIX "_d" CACHE STRING "Suffix for debug builds")
 
 # Usual cmake option to build shared libraries or not
-option(BUILD_SHARED_LIBS "Build shared library" ON)
+#option(BUILD_SHARED_LIBS "Build shared library" OFF)
 
 # Suffix to append to root name, this helps with version management
 # but can be turned off if you don't care, or otherwise customized
