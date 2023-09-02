@@ -6,6 +6,7 @@
 #ifndef INCLUDED_IMFEXPORT_H
 #define INCLUDED_IMFEXPORT_H
 
+#include <cstdint>
 #include "OpenEXRConfig.h"
 
 /// \addtogroup ExportMacros
