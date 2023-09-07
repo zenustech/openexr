@@ -16,7 +16,7 @@ function(IMATH_DEFINE_LIBRARY libname)
   cmake_parse_arguments(IMATH_CURLIB "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
   if (MSVC)
-    set(_imath_extra_flags "/EHsc")
+    set(_imath_extra_flags "-EHsc")
   endif()
   set(objlib ${libname})
   add_library(${objlib}
